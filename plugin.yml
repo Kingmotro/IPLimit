@@ -1,0 +1,27 @@
+name: IPLimit
+version: 1.0
+main: com.envyclient.iplimit.IPLimit
+description: Limit the number of the same ip's connected to your server at one time.
+
+commands:
+   iplimit:
+     usage: /<command>
+     description: Shows commands about the plugin.
+
+permissions:
+   iplimit.*:
+     desciption: Use all plugin commands.
+     children:
+        iplimit.reload: true
+        iplimit.help: true
+        iplimit.bypass: true
+     default: op
+   iplimit.reload:
+     desciption: Allows you to use the reload command.
+     default: op
+   iplimit.help:
+     desciption: Allows you to use the help command.
+     default: op
+   iplimit.bypass:
+     desciption: Bypass the ip limit.
+     default: op
